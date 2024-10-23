@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
+
 <body>
     <!--nav-->
     <nav class="navbar navbar-expand-lg  bg-dark" data-bs-theme="dark">
@@ -33,34 +35,90 @@
     </nav>
     <!--/nav-->
     <!--main-->
-<main>
-    <div class="container">
-<!--titolo-->
-<section>
-    <h1>Nuovo Libro</h1>
-</section>
-<!--/titolo-->
-<!--form-->
-<section>
-    <form action="" class="d-flex">
-<div class="col-6 px-2">
-    <label for="name" class="form-label">Nome Autore</label>
-<input type="name" id="name" class="form-control" aria-describedby="autorname" placeholder="Inserisci il nome dell'autore">
-<div id="autorname" class="form-text">
-</div>
-</div>
-<div class="col-6 px-2">
-    <label for="surname" class="form-label">Cognome Autore</label>
-    <input type="password" id="surname" class="form-control" aria-describedby="surnameautor" placeholder="Inserisci il nome dell'autore">
-    <div id="surnameautor" class="form-text">
-    </div></div>
-    </form>
-</section>
-<!--/form-->
-</div>
-</main>
+    <main>
+        <div class="container">
+            <!--titolo-->
+            <section>
+                <h1>Nuovo Libro</h1>
+            </section>
+            <!--/titolo-->
+            <!--form-->
+            <section>
+                <form action="" class="d-flex flex-wrap">
+                    <div class="col-6 px-2">
+                        <label for="name" class="form-label">Nome Autore</label>
+                        <input type="name" id="name" class="form-control" aria-describedby="autorname"
+                            placeholder="Inserisci il nome dell'autore">
+                        <div id="autorname" class="form-text">
+                        </div>
+                    </div>
+                    <div class="col-6 px-2">
+                        <label for="surname" class="form-label">Cognome Autore</label>
+                        <input type="password" id="surname" class="form-control" aria-describedby="surnameautor"
+                            placeholder="Inserisci il nome dell'autore">
+                        <div id="surnameautor" class="form-text">
+                        </div>
+                    </div>
+
+                    <div class="col-12 px-2">
+                        <label for="booktitle" class="form-label">Titolo del Libro</label>
+                        <input type="booktitle" id="booktitle" class="form-control" aria-describedby="booktitle"
+                            placeholder="Inserisci il nome dell'autore">
+                        <div id="booktitle" class="form-text">
+                            titolo versione italiana
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 px-2">
+                        <label for="Genere" class="form-label">Genere</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Scegli il genere</option>
+                            <option value="1">fantasy</option>
+                            <option value="2">horror</option>
+                            <option value="3">romantico</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-md-4 px-2">
+                        <label for="date" class="form-label">Anno di pubblicazione</label>
+                        <input type="date" id="date" class="form-control" aria-describedby="date"
+                            placeholder="Inserisci l'anno">
+                        <div id="date" class="form-text">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4 px-2">
+                        <label for="code" class="form-label">ISBN#</label>
+                        <input type="code" id="date" class="form-control" aria-describedby="code"
+                            placeholder="Inserisci codice ISBN#">
+                        <div id="code" class="form-text">
+                        </div>
+                    </div>
+
+                    <div class="col-12 bg-secondary my-5" style="height: 2px;"></div>
+                    <div class="col-12">
+                        <label for="Note" class="form-label">Note</label>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Inserisci eventuali note sul libro" id="note" style="height: 100px"></textarea>
+                            <label for="note">Comments</label>
+                          </div>
+                          <div class="form-check my-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                            <label class="form-check-label" for="flexCheckIndeterminate">
+                              Disponibile anche in digitale
+                            </label>
+                          </div>
+                          <button type="button" class="btn btn-primary" type="submit">Aggiungi Libro</button>
+                    </div>
+
+                </form>
+            </section>
+            <!--/form-->
+        </div>
+    </main>
 
 
     <!--/main-->
 </body>
+
 </html>
